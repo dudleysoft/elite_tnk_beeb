@@ -8,14 +8,14 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jun 28 09:04:44 2021
+# Make data base, printed on Mon Jul 12 16:07:48 2021
 
 # Variables
 
 # environment
 SYSTEMDRIVE = C:
 # makefile (from 'Makefile', line 26)
-OBJ = main.o
+OBJ = alg_gfx.o alg_main.o docked.o elite.o intro.o planet.o shipdata.o shipface.o sound.o space.o swat.o threed.o vector.o random.o trade.o options.o stars.o missions.o pilot.o file.o keyboard.o bitmap.o font.o
 # environment
 LC_ALL = C
 # environment
@@ -25,23 +25,25 @@ USERPROFILE = C:\Users\dudle
 # environment
 LOCALAPPDATA = C:\Users\dudle\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-dc00fd23-098d-44c7-b17e-9ddf1fea36f2-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-a7dc18d1-8ea5-407e-8d04-77dd610bfbe2-sock
 # environment
 VSCODE_CWD = C:\Users\dudle\AppData\Local\Programs\Microsoft VS Code
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
-SYSTEMROOT = C:\Windows
+SYSTEMROOT = C:\WINDOWS
 # environment
 PROCESSOR_LEVEL = 23
 # environment
-PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
 # default
 MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_5500_SUUKVDMJAXTLOCCG
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_20904_CGARJJGZYMSBTOJE
+# environment
+VSCODE_BROWSER_CODE_LOADING = bypassHeatCheck
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -54,6 +56,9 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
+# envir 
+onment
+VSCODE_CODE_CACHE_PATH = C:\Users\dudle\AppData\Roaming\Code\CachedData\2d23c42a936db1c7b3b06f918cde29561cc47cd6
 # environment
 LANG = C
 # default
@@ -69,7 +74,7 @@ MAKEFLAGS = pqrR
 # environment
 ONEDRIVE = C:\Users\dudle\OneDrive
 # makefile
-CURDIR := d:/Beeb/beebScreen
+CURDIR := d:/Beeb/elite_newkind
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -93,15 +98,17 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 5500
+VSCODE_PID = 20904
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
 *F = $(notdir $*)
-# makefile (from 'Makefile', line 31)
+# makefile (from 'Makefile', line 36)
 LIB = -lc -lm
 # automatic
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# makefile (from 'Makefile', line 31)
+EXEC = newkind
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # environment
@@ -119,25 +126,24 @@ MAKECMDGOALS := all
 # environment
 DRIVERDATA = C:\Windows\System32\Drivers\DriverData
 # environment
-COMSPEC = C:\Windows\system32\cmd.exe
+COMSPEC = C:\WINDOWS\system32\cmd.exe
 # environment
 PICO_SDK_PATH = D:\projects\pico-sdk
 # environment
-WINDIR = C:\Windows
+WINDIR = C:\WINDOWS
 # environment
 MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\ImageMagick-7.0.10-Q16-HDRI;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python39\Scripts\;C:\Python39\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;c:\cygwin64\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\CodeAndWeb\TexturePacker\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CMake\bin;C:\Program Files\Git LFS;C:\Program Files\PuTTY\;C:\Program Files\doxygen\bin;C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2020-q4-major\bin;C:\Users\dudle\AppData\Local\Microsoft\WindowsApps;C:\Users\dudle\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dudle\AppData\Roaming\npm;D:\gbdk\bin;D:\Beeb\vbcc\bin;
+PATH = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\ImageMagick-7.0.10-Q16-HDRI;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python39\Scripts\;C:\Python39\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;c:\cygwin64\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\CodeAndWeb\TexturePacker\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CMake\bin;C:\Program Files\Git LFS;C:\Program Files\PuTTY\;C:\Program Files\doxygen\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2020-q4-major\bin;C:\Users\dudle\AppData\Local\Microsoft\WindowsApps;C:\Users\dudle\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dudle\AppData\Roaming\npm;D:\gbdk\bin;D:\Beeb\vbcc\bin;
 # environment
 COMPUTERNAME = DESKTOP-5ATHJNK
 # default
 MAKEFILES := 
 # automatic
 ^F = $(notdir $^)
-# 
- environment
+# environment
 PROMPT = $P$G
 # environment
 CHOCOLATEYLASTPATHUPDATE = 132597662206590976
@@ -153,8 +159,9 @@ COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 ?F = $(notdir $?)
 # environment
 PROGRAMW6432 = C:\Program Files
-# makefile (from 'Makefile', line 29)
-BEEB_OBJ = armc-start.o armtubeio.o armtubeswis.o beebScreen/beebScreen.o
+# makefile (from 'Makefile', line 34)
+BEEB_OBJ = armc-start.o armtubeio.o armtubeswis.o beebScreen/ 
+beebScreen.o
 # environment
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
 # automatic
@@ -169,8 +176,10 @@ GNUMAKEFLAGS :=
 GIT_LFS_PATH = C:\Program Files\Git LFS
 # environment
 OS = Windows_NT
+# environment
+__COMPAT_LAYER = DetectorsShimLog
 # makefile
-.DEFAULT_GOAL := test
+.DEFAULT_GOAL := tnk
 # makefile (from 'Makefile', line 6)
 RM = rm
 # makefile (from 'Makefile', line 7)
@@ -187,8 +196,6 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-5ATHJNK
 NUMBER_OF_PROCESSORS = 12
 # environment
 PUBLIC = C:\Users\Public
-# environment
-VSCODE_NODE_CACHED_DATA_DIR = C:\Users\dudle\AppData\Roaming\Code\CachedData\507ce72a4466fbb27b715c3722558bb15afa9f48
 # environment
 ZGB_PATH = d:\ZGB_master\common
 # environment
@@ -208,7 +215,7 @@ ELECTRON_RUN_AS_NODE = 1
 # makefile (from 'Makefile', line 10)
 TEMP = temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\c92adc0de03cace00f1934fa490e8cc4-1.57.1-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\c92adc0de03cace00f1934fa490e8cc4-1.58.0-main-sock
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -222,7 +229,7 @@ ALLUSERSPROFILE = C:\ProgramData
 # makefile (from 'Makefile', line 4)
 LD = arm-none-eabi-gcc
 # makefile (from 'Makefile', line 11)
-TARGET = test
+TARGET = tnk
 # environment
 SESSIONNAME = Console
 # default
@@ -238,7 +245,7 @@ LD_FLAGS := -Wl,--gc-sections -Wl,--no-print-gc-sections -Wl,-T,rpi.X -Wl,-lm
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
 # variable set hash-table stats:
-# Load=112/1024=11%, Rehash=0, Collisions=14/144=10%
+# Load=115/1024=11%, Rehash=0, Collisions=15/147=10%
 
 # Pattern-specific Variable Values
 
@@ -246,22 +253,22 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
 
 # Directories
 
-# . (key d:/Beeb/beebScreen, mtime 1624620731): 39 files, no impossibilities.
+# . (key d:/Beeb/elite_newkind, mtime 1625656167): 130 files, no impossibilities.
 
-# 39 files, no impossibilities in 1 directories.
+# 130 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
 %.d: %.c
-#  recipe to execute (from 'Makefile', line 66):
+#  recipe to execute (from 'Makefile', line 71):
 	$(CC) -M -MG $(DEPFLAGS) $< | sed -e 's@ /[^ ]*@@g' -e 's@^\(.*\)\.o:@\1.d \1.o:@' > $@
 
 %.o: %.c
-#  recipe to execute (from 'Makefile', line 71):
+#  recipe to execute (from 'Makefile', line 76):
 	$(CC) $(CFLAGS) -c $< -o $@
 
 %.o: %.s
-#  recipe to execute (from 'Makefile', line 74):
+#  recipe to execute (from 'Makefile', line 79):
 	$(CC) $(CFLAGS) -c $< -o $@
 	
 
@@ -269,7 +276,37 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
 # Files
 
 # Not a target:
+stars.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+intro.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 armc-start.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sound.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+swat.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+alg_gfx.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -278,31 +315,72 @@ depclean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 63):
+#  recipe to execute (from 'Makefile', line 68):
 	$(RM) $(OBJ:.o=.d)
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-06-22 11:50:15
+#  Last modified 2021-06-28 16:10:00
 #  File has been updated.
 #  Successfully updated.
+
+# Not a target:
+options.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 43):
+#  recipe to execute (from 'Makefile', line 48):
 	$(RM) $(OBJ) $(BEEB_OBJ) $(TARGET) beebScreen/*.bin
+
+# Not a target:
+alg_main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 beebScreen/beebCode.bin: beebScreen/beebCode.asm
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+font.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+shipface.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 cleanall: clean depclean
-#  Implicit rule search has not been d 
-one.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+space.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+docked.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+file.o:
+#  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -316,11 +394,17 @@ beebScreen/beebCode.c: beebScreen/beebCode.bin
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 51):
+#  recipe to execute (from 'Makefile', line 56):
 	cd beebScreen; ./mkasm.bat
 
 # Not a target:
 beebScreen/beebScreen.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vector.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -331,7 +415,7 @@ beebScreen/beebScreen.h:
 #  Modification time never checked.
 #  File has not been updated.
 
-remake: clean test
+remake: clean tnk
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -348,11 +432,17 @@ armtubeio.o:
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+missions.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 beebScreen/extraCode.c: beebScreen/beebCode.asm beebScreen/extraCode.bin
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 54):
+#  recipe to execute (from 'Makefile', line 59):
 	cd beebScreen; ./mkasm.bat
 
 # Not a target:
@@ -362,23 +452,12 @@ all:
 #  File does not exist.
 #  File has not been updated.
 
-beebScreen/beebScreen.o: beebScreen/beebScreen.c beebScreen/beebCode.c beebScreen/beebScreen.h
+tnk: alg_gfx.o alg_main.o docked.o elite.o intro.o planet.o shipdata.o shipface.o sound.o space.o swat.o threed.o vector.o random.o trade.o  
+options.o stars.o missions.o pilot.o file.o keyboard.o bitmap.o font.o armc-start.o armtubeio.o armtubeswis.o beebScreen/beebScreen.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 48):
-	$(CC) $(CFLAGS) -c beebScreen/beebScreen.c -o beebScreen/beebScreen.o
-
-main.c: beebScreen/beebCode.c beebScreen/extraCode.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-test: main.o armc-start.o armtubeio.o armtubeswis.o beebScreen/beebScreen.o
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
+#  recipe to execute (from 'Makefile', line 39):
 	$(CC) $(CFLAGS) $(LD_FLAGS) $(OBJ) $(BEEB_OBJ) $(LIB) -o $(TEMP)
 	$(OBJCOPY) -O binary $(TEMP) $@
 	$(RM) $(TEMP)
@@ -386,7 +465,61 @@ test: main.o armc-start.o armtubeio.o armtubeswis.o beebScreen/beebScreen.o
 	$(ECHO) $(TARGET) WR \(0\) F000 F000 > \#\#\#BBC.inf
 
 # Not a target:
-main.o:
+trade.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+beebScreen/beebScreen.o: beebScreen/beebScreen.c beebScreen/beebCode.c beebScreen/beebScreen.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 53):
+	$(CC) $(CFLAGS) -c beebScreen/beebScreen.c -o beebScreen/beebScreen.o
+
+main.c: beebScreen/beebCode.c beebScreen/extraCode.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+elite.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+shipdata.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+keyboard.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+threed.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pilot.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+planet.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+random.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -397,25 +530,31 @@ armtubeswis.o:
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+bitmap.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 beebScreen/extraCode.bin: beebScreen/beebCode.asm
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=22/1024=2%, Rehash=0, Collisions=0/57=0%
+# Load=44/1024=4%, Rehash=0, Collisions=3/101=3%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 58 / storage = 627 B / avg = 10 B
-# current buf: size = 8174 B / used = 627 B / count = 58 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 149 / storage = 1462 B / avg = 9 B
+# current buf: size = 8174 B / used = 1462 B / count = 149 / avg = 9 B
 
-# strcache performance: lookups = 93 / hit rate = 37%
+# strcache performance: lookups = 206 / hit rate = 27%
 # hash-table stats:
-# Load=58/8192=1%, Rehash=0, Collisions=0/93=0%
-# Finished Make data base on Mon Jun 28 09:04:44 2021
+# Load=149/8192=2%, Rehash=0, Collisions=0/206=0%
+# Finished Make data base on Mon Jul 12 16:07:48 2021
 
  

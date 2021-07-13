@@ -1,6 +1,17 @@
 {
     "makefile.extensionOutputFolder": "./.vscode",
     "files.associations": {
-        "ctype.h": "c"
+        "ctype.h": "c",
+        "font.h": "c",
+        "swis.h": "c",
+        "bitmap.h": "c",
+        "sqrtf.h": "c",
+        "newlib.h": "c",
+        "_newlib_version.h": "c",
+        "config.h": "c",
+        "alg_data.h": "c",
+        "ieeefp.h": "c",
+        "_ansi.h": "c",
+        "dirent.h": "c"
     }
 }

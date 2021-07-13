@@ -8,7 +8,7 @@ ECHO = echo
 
 # Temporary file to hold our unconverted binary file
 TEMP = temp
-TARGET = test
+TARGET = tnk
 
 #Uncomment this line for the full fat VFP optimised Raspberry Pi Native ARM co-processor build.
 #CFLAGS := -DVFP -nostartfiles -O2 -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float
@@ -23,7 +23,12 @@ CFLAGS := -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-poin
 LD_FLAGS := -Wl,--gc-sections -Wl,--no-print-gc-sections -Wl,-T,rpi.X -Wl,-lm
 
 # Add your object files here
-OBJ = main.o
+OBJ = alg_gfx.o alg_main.o docked.o elite.o \
+intro.o planet.o shipdata.o shipface.o sound.o space.o \
+swat.o threed.o vector.o random.o trade.o options.o \
+stars.o missions.o pilot.o file.o keyboard.o \
+bitmap.o font.o
+EXEC = newkind
 
 # Beeb coprocessor 
 BEEB_OBJ = armc-start.o armtubeio.o armtubeswis.o beebScreen/beebScreen.o

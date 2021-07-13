@@ -1,19 +1,51 @@
 make.exe --dry-run --always-make --keep-going --print-directory
-make: Entering directory 'd:/Beeb/beebScreen'
-cd beebScreen; ./mkasm.bat
+make: Entering directory 'd:/Beeb/elite_newkind'
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c alg_gfx.c -o alg_gfx.o
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c alg_main.c -o alg_main.o
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c docked.c -o docked.o
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c elite.c -o elite.o
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c intro.c -o intro.o
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c planet.c -o planet.o
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c shipdata.c -o shipdata.o
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c shipface.c -o shipface.o
  
-cd beebScreen; ./mkasm.bat
-arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c main.c -o main.o
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c sound.c -o sound.o
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c space.c -o space.o
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c swat.c -o swat.o
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c threed.c -o threed.o
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c vector.c -o vector.o
+ 
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c random.c -o random.o
+ 
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c trade.c -o trade.o
+ 
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c options.c -o options.o
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c stars.c -o stars.o
+ 
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c missions.c -o missions.o
+ 
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c pilot.c -o pilot.o
+ 
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c file.c -o file.o
+ 
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c keyboard.c -o keyboard.o
+ 
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c bitmap.c -o bitmap.o
+ 
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c font.c -o font.o
  
 arm-none-eabi-gcc    -c -o armc-start.o armc-start.S
+ 
 arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c armtubeio.c -o armtubeio.o
+ 
 arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c armtubeswis.s -o armtubeswis.o
  
+cd beebScreen; ./mkasm.bat
 arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -c beebScreen/beebScreen.c -o beebScreen/beebScreen.o
-arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -Wl,--gc-sections -Wl,--no-print-gc-sections -Wl,-T,rpi.X -Wl,-lm main.o armc-start.o armtubeio.o armtubeswis.o beebScreen/beebScreen.o -lc -lm -o temp
-arm-none-eabi-objcopy -O binary temp test
+arm-none-eabi-gcc -nostartfiles -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fno-delete-null-pointer-checks -fdata-sections -ffunction-sections --specs=nano.specs --specs=nosys.specs -u _printf_float -Wl,--gc-sections -Wl,--no-print-gc-sections -Wl,-T,rpi.X -Wl,-lm alg_gfx.o alg_main.o docked.o elite.o intro.o planet.o shipdata.o shipface.o sound.o space.o swat.o threed.o vector.o random.o trade.o options.o stars.o missions.o pilot.o file.o keyboard.o bitmap.o font.o armc-start.o armtubeio.o armtubeswis.o beebScreen/beebScreen.o -lc -lm -o temp
+arm-none-eabi-objcopy -O binary temp tnk
 rm temp
-echo test 0000F000 0000F000 > test.inf
-echo test WR \(0\) F000 F000 > \#\#\#BBC.inf
-make: Leaving directory 'd:/Beeb/beebScreen'
+echo tnk 0000F000 0000F000 > tnk.inf
+echo tnk WR \(0\) F000 F000 > \#\#\#BBC.inf
+make: Leaving directory 'd:/Beeb/elite_newkind'
  

@@ -632,11 +632,11 @@ DIR *fdopendir (int fd)
 
 struct dirent *readdir (DIR *dir)
 {
-    if (dir->__d_position == dir->__d_cookie)
+    dir->__d_position++;
+    if (dir->__d_position >= dir->__d_cookie)
     {
         return NULL;
     }
-    dir->__d_position++;
     return &dir->__d_dirent[dir->__d_position];
 }
 
